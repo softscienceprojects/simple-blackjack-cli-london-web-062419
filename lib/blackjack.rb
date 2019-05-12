@@ -39,7 +39,7 @@ def hit?(card_total)
   end
   if user_input == "h" #if gets h
     card_total += deal_card #update the card total by adding on a new deal_card
-   display_card_total(card_total)
+    display_card_total(card_total)
   end
   return card_total # return the card total (outside of everything)
 end
@@ -55,7 +55,7 @@ end
 def runner
   welcome
   initial_round
-  hit?(1)
+  hit?()
   until card_total > 21
     hit?(card_total)
   end
