@@ -53,6 +53,7 @@ end
 #####################################################
 
 def runner
+  card_total = nil
   welcome
   initial_round
   hit?()
